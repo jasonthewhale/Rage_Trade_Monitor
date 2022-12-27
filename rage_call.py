@@ -8,12 +8,12 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents=intents)
-channel =client.get_channel('1053525771047673947')
+channel =client.get_channel('Your channel ID here')
 ###############################################################
 
 
 
-rpc = 'https://arb1.arbitrum.io/rpc'
+rpc = 'Arbitrum RPC here'
 web3 = Web3(HTTPProvider(rpc))
 
 simulatorContract = "0x5c92846A38E75e56ef6935A2B12fF832F1FA80ac"
@@ -99,6 +99,6 @@ async def on_message(message):
                 await message.channel.send('chill, not yet to take profit')
             await asyncio.sleep(300)
 
-client.run('MTA1MzUyMjE2MzA4NjQxMzgzNA.GgIoCe.Sza9WG9c9vqDSWsNTEuNqQVSkNKsaPw5N04pN0')
+client.run('Your discord bot key here')
 
 ##################################################################################################
